@@ -198,14 +198,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 2380827652646260739, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
+      propertyPath: m_Name
+      value: Body
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072476832849038107, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572423615271663319, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
+      propertyPath: m_Name
+      value: Player Explosion VFX
+      objectReference: {fileID: 0}
     - target: {fileID: 8741652648551481424, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
       propertyPath: crashParticles
       value: 
-      objectReference: {fileID: 5664226690120468549, guid: a4f1b6e06897f894a9f29cc44e11d182, type: 3}
+      objectReference: {fileID: 2620191863081523406}
+    - target: {fileID: 8741652648551481424, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
+      propertyPath: levelLoadDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
 --- !u!4 &6923832842522425350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 157521642165185491, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
+  m_PrefabInstance: {fileID: 7077904137585316821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2620191863081523406 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5072476832849038107, guid: dee49e61ca9ee854bbafd7c462dfaa94, type: 3}
   m_PrefabInstance: {fileID: 7077904137585316821}
   m_PrefabAsset: {fileID: 0}
