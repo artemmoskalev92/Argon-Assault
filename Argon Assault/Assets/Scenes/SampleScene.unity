@@ -157,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5020202034263274889, guid: 34c023964d812e746bc8e318975d9fbd, type: 3}
   parent: {fileID: 1592513353}
+  scorePerHit: 15
 --- !u!136 &32826340
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -229,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 32826338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 130.8, y: 64, z: 222.7}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -268,6 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5020202034263274889, guid: 34c023964d812e746bc8e318975d9fbd, type: 3}
   parent: {fileID: 1592513353}
+  scorePerHit: 15
 --- !u!136 &36971804
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -340,7 +342,7 @@ Transform:
   m_GameObject: {fileID: 36971802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 130.8, y: 34.4, z: 222.7}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -606,7 +608,7 @@ Transform:
   m_GameObject: {fileID: 1028782449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 119.37, y: 64.82, z: 193.63}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -625,6 +627,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5020202034263274889, guid: 34c023964d812e746bc8e318975d9fbd, type: 3}
   parent: {fileID: 1592513353}
+  scorePerHit: 15
+--- !u!1 &1380614577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1380614579}
+  - component: {fileID: 1380614578}
+  m_Layer: 0
+  m_Name: ScoreBoard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1380614578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380614577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d106106a953724bab79fac2edd2de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1380614579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380614577}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409517248
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +838,7 @@ Transform:
   m_GameObject: {fileID: 1524269268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 137.9, y: 58.9, z: 307.6}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -811,6 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5020202034263274889, guid: 34c023964d812e746bc8e318975d9fbd, type: 3}
   parent: {fileID: 1592513353}
+  scorePerHit: 15
 --- !u!1 &1592513352
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,6 +922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5020202034263274889, guid: 34c023964d812e746bc8e318975d9fbd, type: 3}
   parent: {fileID: 1592513353}
+  scorePerHit: 15
 --- !u!136 &1629160070
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -947,7 +995,7 @@ Transform:
   m_GameObject: {fileID: 1629160068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 112.4, y: 64, z: 222.7}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -986,6 +1034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5020202034263274889, guid: 34c023964d812e746bc8e318975d9fbd, type: 3}
   parent: {fileID: 1592513353}
+  scorePerHit: 15
 --- !u!136 &2000337379
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1058,7 +1107,7 @@ Transform:
   m_GameObject: {fileID: 2000337377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 111.575, y: 34.4, z: 222.7}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1097,6 +1146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5020202034263274889, guid: 34c023964d812e746bc8e318975d9fbd, type: 3}
   parent: {fileID: 1592513353}
+  scorePerHit: 15
 --- !u!136 &2067972084
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1169,7 +1219,7 @@ Transform:
   m_GameObject: {fileID: 2067972082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 92.2, y: 34.4, z: 222.7}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
