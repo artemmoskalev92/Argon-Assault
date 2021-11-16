@@ -9,14 +9,15 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Particle Star 1
   m_Shader: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: EFFECT_BUMP _ALPHABLEND_ON _COLOROVERLAY_ON
+  m_ShaderKeywords: _ALPHABLEND_ON _COLORADDSUBDIFF_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - ALWAYS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -57,19 +58,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlendOp: 0
+    - _BlendOp: 2
     - _BumpScale: 1
     - _CameraFadingEnabled: 0
     - _CameraFarFadeDistance: 2
     - _CameraNearFadeDistance: 1
-    - _ColorMode: 3
+    - _ColorMode: 2
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DistortionBlend: 0
-    - _DistortionEnabled: 1
-    - _DistortionStrength: 5.1
-    - _DistortionStrengthScaled: 0.51
+    - _DistortionBlend: 0.13
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 0.8
+    - _DistortionStrengthScaled: 0.080000006
     - _DstBlend: 1
     - _EmissionEnabled: 0
     - _FlipbookMode: 0
@@ -79,7 +80,7 @@ Material:
     - _InvFade: 1
     - _LightingEnabled: 0
     - _Metallic: 0
-    - _Mode: 4
+    - _Mode: 5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -92,7 +93,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 3.004233, g: 3.0117645, b: 0, a: 1}
+    - _Color: {r: 3.139933, g: 3.1253498, b: 0.16292107, a: 1}
     - _ColorAddSubDiff: {r: -1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}

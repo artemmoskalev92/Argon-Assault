@@ -14,7 +14,7 @@ public class CollisionHandler : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-      Debug.Log($"{this.name} ** Triggered by** {other.gameObject.name}");
+      
       StartCrashSequence();
     }
     void StartCrashSequence()
