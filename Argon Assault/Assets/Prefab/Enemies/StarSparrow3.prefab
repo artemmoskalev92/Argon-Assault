@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 7473045540597906356}
   - component: {fileID: 7463457159779002692}
   - component: {fileID: 601327660154932667}
+  - component: {fileID: -9085598222515686805}
   m_Layer: 0
   m_Name: StarSparrow3
   m_TagString: Untagged
@@ -187,6 +188,19 @@ MonoBehaviour:
   hitVFX: {fileID: 5020202034263274889, guid: 0fe8e828a836a0546916f7526e347de4, type: 3}
   scorePerHit: 15
   hitPoints: 5
+--- !u!65 &-9085598222515686805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7477344437658108732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.491302, y: 2.8077502, z: 10.850525}
+  m_Center: {x: 0, y: -0.0000056624413, z: 0.0000011920929}
 --- !u!1 &7477363196478576988
 GameObject:
   m_ObjectHideFlags: 0
