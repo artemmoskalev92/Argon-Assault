@@ -9,44 +9,50 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject hitVFX;
     [SerializeField] int scorePerHit = 15;
     [SerializeField] int hitPoints = 5;
+    public int HitPoints
+    {
+        get { return hitPoints; }
+        set { hitPoints = value; }
+    }
+   
 
     ScoreBoard scoreBoard;
     GameObject parentGameObject;
     
     
 
-    void Start()
+    protected void Start()
     {
         AddRigidbody();
         scoreBoard = FindObjectOfType<ScoreBoard>();
         parentGameObject = GameObject.FindWithTag("SpawnManager");
     }
 
-    private void AddRigidbody()
+    protected void AddRigidbody()
     {
         Rigidbody rb = gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
     }
 
-    void OnParticleCollision(GameObject other)
+    protected void OnParticleCollision(GameObject other)
     {
         ProcessHit();
-        if (hitPoints < 1)
+        if (HitPoints < 1)
         {
             DestroyEnemy();
         }
         
     }
 
-    void ProcessHit()
+    protected virtual void ProcessHit()
     {
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parentGameObject.transform;
-        hitPoints--;
+        HitPoints--;
         
     }
 
-    void DestroyEnemy()
+   protected void DestroyEnemy()
     {
         scoreBoard.IncreaseScore(scorePerHit);
         GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
